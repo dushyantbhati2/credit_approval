@@ -15,7 +15,7 @@ def ingest_data():
                 'first_name': row['First Name'],
                 'last_name': row['Last Name'],
                 'phone_number': row['Phone Number'],
-                'monthly_salary': row['Monthly Salary'],
+                'monthly_income': row['Monthly Salary'],
                 'approved_limit': row['Approved Limit'],
                 'age':row['Age']
             }
