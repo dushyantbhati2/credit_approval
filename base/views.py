@@ -37,7 +37,7 @@ class CheckEligibilityView(APIView):
                 "corrected_interest_rate": result['corrected_interest_rate'],
                 "tenure": int(request.data['tenure']),
                 "monthly_installment": result['monthly_installment'],
-            },status=202)
+            },status=200)
 
         except models.Customer.DoesNotExist:
             return Response({"error": "Customer not found"}, status=404)
